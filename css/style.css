@@ -1177,9 +1177,9 @@ FAQ SECTION
 .dots .dot {
   width: 10px;
   height: 10px;
-  border-radius: 50px;
+  border-radius: 50%;
   background-color: #FBFBFC;
-  border: none;
+  border: 1px solid #E4E7ED;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
