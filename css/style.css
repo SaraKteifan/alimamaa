@@ -1322,6 +1322,7 @@ FAQ SECTION
   border: 1px solid #E4E7ED;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  display: none;
 }
 
 .dots .dot.active {
