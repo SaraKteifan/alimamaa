@@ -1335,10 +1335,10 @@ FAQ SECTION
 
 .dots .dot {
   aspect-ratio: 1 / 1;
-  width: 1px;
   border-radius: 100%;
   background-color: #FBFBFC;
-  border: 1px solid #E4E7ED;
+  /*border: 1px solid #E4E7ED;*/
+  border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
