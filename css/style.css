@@ -773,7 +773,7 @@ animation-duration: 3s;
 
 .product-widget .product-body .product-price {
   font-size: 18px;
-  /*margin-bottom: 20px;*/
+  margin-bottom: 20px;
   color: #D10024;
 }
 
@@ -1316,7 +1316,7 @@ FAQ SECTION
 
 .dots .dot {
   aspect-ratio: 1 / 1;
-  width: 5px;
+  width: 3px;
   border-radius: 100%;
   background-color: #FBFBFC;
   border: 1px solid #E4E7ED;
