@@ -758,27 +758,17 @@ animation-duration: 3s;
 
 .product-widget .product-name-l a {
   padding: 0 35px;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
 }
 
 .product-widget .product-body .product-name a {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
 }
 
 .product-widget .product-name>a:hover, .product-widget .product-body .product-name>a:focus {
   color: #D10024;
-}
-
-.waranty {
-  color: #0457c8;
-  margin: 10px 0;
-}
-
-.waranty i {
-  color: #0457c8;
-  margin: 0 2px;
 }
 
 .product-widget .product-body .product-price {
@@ -1200,21 +1190,12 @@ animation-duration: 3s;
   .product-widget .product-img {
     width: 30%;
   }
-  .product-widget .product-name-l {
-    display: none;
-  }
-  .product-body .waranty {
-    display: none;
-  }
   .product-body button {
     display: none;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .product-widget .product-body .product-name {
-    display:none;
-  }
   .product-widget .product-third-col {
     display:none;
   }
@@ -1338,11 +1319,9 @@ FAQ SECTION
   width: 5px;
   border-radius: 100%;
   background-color: #FBFBFC;
-  /*border: 1px solid #E4E7ED;*/
-  border: none;
+  border: 1px solid #E4E7ED;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  display: none;
 }
 
 .dots .dot.active {
