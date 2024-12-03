@@ -13,7 +13,7 @@
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
 
 	<!-- Font Awesome Icon -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
 
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
@@ -32,12 +32,6 @@
 	<header>
 		<!-- TOP HEADER -->
 		<div id="top-header">
-			<div class="container">
-				<ul class="header-links pull-left">
-					<li><a href="https://maps.app.goo.gl/fcpS6cqZfpdxAS367" target="_blank"><i
-								class="fa fa-map-marker"></i> وكيلنا المعتمد في العقبة: محل بنش</a></li>
-				</ul>
-			</div>
 		</div>
 		<!-- /TOP HEADER -->
 
@@ -48,7 +42,7 @@
 				<!-- row -->
 				<div class="row">
 					<!-- LOGO -->
-					<div class="col-md-3 col-xs-6 right-float">
+					<div class="col-md-3 col-xs-6 right-float logo-con">
 						<div class="header-logo">
 							<a href="index.html" class="logo">
 								<img src="./img/logo.png" alt="">
@@ -56,6 +50,31 @@
 						</div>
 					</div>
 					<!-- /LOGO -->
+
+					<!-- NAVIGATION -->
+					<nav id="navigation">
+						<!-- responsive-nav -->
+						<div id="responsive-nav">
+							<!-- NAV -->
+							<ul class="main-nav nav navbar-nav">
+								<li><a href="index.html">الصفحة الرئيسية</a></li>
+								<li><a href="#galary">معرض الأجهزة</a></li>
+								<li><a href="#faq">الأسئلة الشائعة</a></li>
+								<li><a href="https://wa.me/PHONE_NUMBER">تواصل معنا</a></li>
+							</ul>
+							<!-- /NAV -->
+						</div>
+						<!-- /responsive-nav -->
+					</nav>
+					<!-- /NAVIGATION -->
+
+					<!-- Menu Toogle -->
+					<div class="menu-toggle col-xs-3">
+						<a href="#">
+							<i class="fa fa-bars"></i>
+						</a>
+					</div>
+					<!-- /Menu Toogle -->
 				</div>
 				<!-- row -->
 			</div>
@@ -70,29 +89,40 @@
 		<!-- List item -->
 		<div class="list">
 			<div class="item active">
-				<img src="img/slider1.png" alt="">
+				<picture>
+					<source srcset="img/smallslider1.png" media="(max-width: 480px)">
+					<img src="img/slider1.png" alt="">
+				</picture>
+				<!--<img src="img/slider1.png" alt="">-->
 			</div>
 			<div class="item">
-				<img src="img/slider2.png" alt="">
+				<picture>
+					<source srcset="img/smallslider2.png" media="(max-width: 480px)">
+					<img src="img/slider2.png" alt="">
+				</picture>
+				<!--<img src="img/slider2.png" alt="">-->
 			</div>
 			<div class="item">
-				<img src="img/slider3.png" alt="">
+				<picture>
+					<source srcset="img/smallslider3.png" media="(max-width: 480px)">
+					<img src="img/slider3.png" alt="">
+				</picture>
+				<!--<img src="img/slider3.png" alt="">-->
 			</div>
 		</div>
 		<!-- /List item -->
 
 		<!-- Dots -->
 		<div class="dots">
-			<span class="dot active" data-slide="0"></span>
-			<span class="dot" data-slide="1"></span>
-			<span class="dot" data-slide="2"></span>
+			<button class="dot active" data-slide="0"></button>
+			<button class="dot" data-slide="1"></button>
+			<button class="dot" data-slide="2"></button>
 		</div>
 		<!-- /Dots -->
 	</div>
 
-
 	<!-- SECTION -->
-	<div class="section" id="products">
+	<div class="section" id="galary">
 		<div class="section-title text-center">
 			<h4 class="title">معرض الأجهزة</h4>
 		</div>
@@ -100,322 +130,169 @@
 		<div class="container">
 			<!-- row -->
 			<div class="row">
-				<!-- STORE -->
-				<div id="store" class="col-md-12">
-					<!-- store top filter -->
-					<div class="store-filter clearfix">
-						<div class="store-sort">
-							<label>
-								اختيار:
-								<select class="input-select" id="cat" name="cat">
-									<option value="0" default>الكل</option>
-									<option value="0">آيفون 11</option>
-									<option value="1">آيفون 12</option>
-								</select>
-							</label>
-						</div>
-					</div>
-					<!-- /store top filter -->
-
-					<!-- store products -->
-					<div class="row">
-						<!-- product -->
-						<div class="col-md-3 col-xs-6">
-							<a href="product.html">
-								<div class="product">
-									<div class="product-img">
-										<img src="./img/product01.png" alt="">
-									</div>
-									<div class="product-body">
-										<h3 class="product-name"><a href="#">آيفون 11 أبيض مساحة 128 جيجا</a></h3>
-										<h4 class="product-price">280 دينار</h4>
-										<a href="product.html">
-											<!--<button class="add-to-cart-btn">تفاصيل</button>-->
-										</a>
-									</div>
-								</div>
-							</a>
-						</div>
-						<!-- /product -->
-
-						<!-- product -->
-						<div class="col-md-3 col-xs-6">
-							<a href="product.html">
-							<div class="product">
-								<div class="product-img">
-									<img src="./img/product02.png" alt="">
-								</div>
-								<div class="product-body">
-									<h3 class="product-name"><a href="#">آيفون 12 أزرق مساحة 64 جيجا</a></h3>
-									<h4 class="product-price">150 دينار</h4>
-									<a href="product.html">
-										<!--<button class="add-to-cart-btn">تفاصيل</button>-->
-									</a>
-								</div>
-							</div>
-							</a>
-						</div>
-						<!-- /product -->
-
-						<div class="clearfix visible-sm visible-xs"></div>
-
-						<!-- product -->
-						<div class="col-md-3 col-xs-6">
-							<a href="product.html">
-							<div class="product">
-								<div class="product-img">
-									<img src="./img/product03.png" alt="">
-								</div>
-								<div class="product-body">
-									<h3 class="product-name"><a href="#">آيفون 11 pro أبيض مساحة 128 جيجا</a></h3>
-									<h4 class="product-price">300 دينار</h4>
-									<a href="product.html">
-										<!--<button class="add-to-cart-btn">تفاصيل</button>-->
-									</a>
-								</div>
-							</div>
-							</a>
-						</div>
-						<!-- /product -->
-
-						<!-- product -->
-						<div class="col-md-3 col-xs-6">
-							<a href="product.html">
-							<div class="product">
-								<div class="product-img">
-									<img src="./img/product04.png" alt="">
-								</div>
-								<div class="product-body">
-									<h3 class="product-name"><a href="#">آيفون 16 أزرق مساحة 64 جيجا</a></h3>
-									<h4 class="product-price">500 دينار</h4>
-									<a href="product.html">
-										<!--<button class="add-to-cart-btn">تفاصيل</button>-->
-									</a>
-								</div>
-							</div>
-							</a>
-						</div>
-						<!-- /product -->
-
-						<div class="clearfix visible-sm visible-xs"></div>
-						<div class="clearfix visible-lg visible-md"></div>
-
-						<!-- product -->
-						<div class="col-md-3 col-xs-6">
-							<a href="product.html">
-							<div class="product">
-								<div class="product-img">
-									<img src="./img/product05.png" alt="">
-								</div>
-								<div class="product-body">
-									<h3 class="product-name"><a href="#">آيفون 11 أبيض مساحة 128 جيجا</a></h3>
-									<h4 class="product-price">250 دينار</h4>
-									<a href="product.html">
-										<!--<button class="add-to-cart-btn">تفاصيل</button>-->
-									</a>
-								</div>
-							</div>
-							</a>
-						</div>
-						<!-- /product -->
-
-						<!-- product -->
-						<div class="col-md-3 col-xs-6">
-							<a href="product.html">
-							<div class="product">
-								<div class="product-img">
-									<img src="./img/product06.png" alt="">
-								</div>
-								<div class="product-body">
-									<h3 class="product-name"><a href="#">آيفون 15 أزرق مساحة 64 جيجا</a></h3>
-									<h4 class="product-price">330 دينار</h4>
-									<a href="product.html">
-										<!--<button class="add-to-cart-btn">تفاصيل</button>-->
-									</a>
-								</div>
-							</div>
-							</a>
-						</div>
-						<!-- /product -->
-
-						<div class="clearfix visible-sm visible-xs"></div>
-
-						<!-- product -->
-						<div class="col-md-3 col-xs-6">
-							<a href="product.html">
-							<div class="product">
-								<div class="product-img">
-									<img src="./img/product07.png" alt="">
-								</div>
-								<div class="product-body">
-									<h3 class="product-name"><a href="#">آيفون x أبيض مساحة 128 جيجا</a></h3>
-									<h4 class="product-price">120 دينار</h4>
-									<a href="product.html">
-										<!--<button class="add-to-cart-btn">تفاصيل</button>-->
-									</a>
-								</div>
-							</div>
-							</a>
-						</div>
-						<!-- /product -->
-
-						<!-- product -->
-						<div class="col-md-3 col-xs-6">
-							<a href="product.html">
-							<div class="product">
-								<div class="product-img">
-									<img src="./img/product08.png" alt="">
-								</div>
-								<div class="product-body">
-									<h3 class="product-name"><a href="#">آيفون 11 أزرق مساحة 64 جيجا</a></h3>
-									<h4 class="product-price">280 دينار</h4>
-									<a href="product.html">
-										<!--<button class="add-to-cart-btn">تفاصيل</button>-->
-									</a>
-								</div>
-							</div>
-							</a>
-						</div>
-						<!-- /product -->
-
-						<div class="clearfix visible-sm visible-xs"></div>
-						<div class="clearfix visible-lg visible-md"></div>
-					</div>
-					<!-- /store products -->
-
-					<!-- store bottom filter -->
-					<div class="store-filter clearfix">
-						<ul class="store-pagination">
-							<li class="active">1</li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#"><i class="fa fa-angle-left"></i></a></li>
-						</ul>
-					</div>
-					<!-- /store bottom filter -->
-				</div>
-				<!-- /STORE -->
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</div>
-	<!-- /SECTION -->
-
-	<!-- SECTION -->
-	<div class="section">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
 				<div class="">
-					<div class="section-title text-center">
-						<h4 class="title">معرض الأجهزة</h4>
-					</div>
-
 					<div class="">
 						<div>
 							<!-- product widget -->
 							<div class="product-widget">
-								<div class="product-img">
-									<img src="./img/product07.png" alt="">
-								</div>
-								<div class="product-body">
-									<h3 class="product-name"><a href="#">آيفون 11</a></h3>
-									<p><span class="product-title">اللون: </span> أبيض</p>
-									<p><span class="product-title">المساحة: </span> 128 جيجا</p>
-									<h4 class="product-price">280 دينار</h4>
-									<a href="product.html">
-										<button class="add-to-cart-btn">تفاصيل</button>
-									</a>
-								</div>
-							</div>
-							<!-- /product widget -->
-
-							<!-- product widget -->
-							<div class="product-widget">
-								<div class="product-img">
-									<img src="./img/product08.png" alt="">
-								</div>
-								<div class="product-body">
-									<h3 class="product-name"><a href="#">آيفون 11</a></h3>
-									<p><span class="product-title">اللون: </span> أبيض</p>
-									<p><span class="product-title">المساحة: </span> 128 جيجا</p>
-									<h4 class="product-price">280 دينار</h4>
-									<a href="product.html">
-										<button class="add-to-cart-btn">تفاصيل</button>
-									</a>
+								<h3 class="product-name-l"><a href="#">آيفون 11 أبيض مساحة 280 جيجا</a></h3>
+								<div class="product-box">
+									<div class="product-img">
+										<img src="./img/product07.png" alt="">
+									</div>
+									<div class="product-body">
+										<h3 class="product-name"><a href="#">آيفون 11 أبيض مساحة 280 جيجا</a></h3>
+										<h4 class="product-price">280 دينار</h4>
+										<p class="waranty"><i class="fa-solid fa-check"></i>كفالة 3 أشهر</p>
+										<p><span class="product-title">اللون: </span> أبيض</p>
+										<p><span class="product-title">المساحة: </span> 128 جيجا</p>
+										<a href="product.html">
+											<button class="add-to-cart-btn">تفاصيل</button>
+										</a>
+									</div>
+									<div class="product-third-col">
+										<p class="waranty"><i class="fa-solid fa-check"></i>كفالة 3 أشهر</p>
+										<a href="product.html">
+											<button class="add-to-cart-btn">تفاصيل</button>
+										</a>
+									</div>
 								</div>
 							</div>
 							<!-- /product widget -->
-
+							<hr />
 							<!-- product widget -->
 							<div class="product-widget">
-								<div class="product-img">
-									<img src="./img/product09.png" alt="">
+								<h3 class="product-name-l"><a href="#">آيفون 11 أبيض مساحة 280 جيجا</a></h3>
+								<div class="product-box">
+									<div class="product-img">
+										<img src="./img/product08.png" alt="">
+									</div>
+									<div class="product-body">
+										<h3 class="product-name"><a href="#">آيفون 11 أبيض مساحة 280 جيجا</a></h3>
+										<h4 class="product-price">280 دينار</h4>
+										<p class="waranty"><i class="fa-solid fa-check"></i>كفالة 3 أشهر</p>
+										<p><span class="product-title">اللون: </span> أبيض</p>
+										<p><span class="product-title">المساحة: </span> 128 جيجا</p>
+										<a href="product.html">
+											<button class="add-to-cart-btn">تفاصيل</button>
+										</a>
+									</div>
+									<div class="product-third-col">
+										<p class="waranty"><i class="fa-solid fa-check"></i>كفالة 3 أشهر</p>
+										<a href="product.html">
+											<button class="add-to-cart-btn">تفاصيل</button>
+										</a>
+									</div>
 								</div>
-								<div class="product-body">
-									<h3 class="product-name"><a href="#">آيفون 11</a></h3>
-									<p><span class="product-title">اللون: </span> أبيض</p>
-									<p><span class="product-title">المساحة: </span> 128 جيجا</p>
-									<h4 class="product-price">280 دينار</h4>
-									<a href="product.html">
-										<button class="add-to-cart-btn">تفاصيل</button>
-									</a>
+							</div>
+							<!-- /product widget -->
+							<hr />
+							<!-- product widget -->
+							<div class="product-widget">
+								<h3 class="product-name-l"><a href="#">آيفون 11 أبيض مساحة 280 جيجا</a></h3>
+								<div class="product-box">
+									<div class="product-img">
+										<img src="./img/product09.png" alt="">
+									</div>
+									<div class="product-body">
+										<h3 class="product-name"><a href="#">آيفون 11 أبيض مساحة 280 جيجا</a></h3>
+										<h4 class="product-price">280 دينار</h4>
+										<p class="waranty"><i class="fa-solid fa-check"></i>كفالة 3 أشهر</p>
+										<p><span class="product-title">اللون: </span> أبيض</p>
+										<p><span class="product-title">المساحة: </span> 128 جيجا</p>
+										<a href="product.html">
+											<button class="add-to-cart-btn">تفاصيل</button>
+										</a>
+									</div>
+									<div class="product-third-col">
+										<p class="waranty"><i class="fa-solid fa-check"></i>كفالة 3 أشهر</p>
+										<a href="product.html">
+											<button class="add-to-cart-btn">تفاصيل</button>
+										</a>
+									</div>
 								</div>
 							</div>
 							<!-- product widget -->
 						</div>
-
+						<hr />
 						<div>
 							<!-- product widget -->
 							<div class="product-widget">
-								<div class="product-img">
-									<img src="./img/product01.png" alt="">
-								</div>
-								<div class="product-body">
-									<h3 class="product-name"><a href="#">آيفون 11</a></h3>
-									<p><span class="product-title">اللون: </span> أبيض</p>
-									<p><span class="product-title">المساحة: </span> 128 جيجا</p>
-									<h4 class="product-price">280 دينار</h4>
-									<a href="product.html">
-										<button class="add-to-cart-btn">تفاصيل</button>
-									</a>
-								</div>
-							</div>
-							<!-- /product widget -->
-
-							<!-- product widget -->
-							<div class="product-widget">
-								<div class="product-img">
-									<img src="./img/product02.png" alt="">
-								</div>
-								<div class="product-body">
-									<h3 class="product-name"><a href="#">آيفون 11</a></h3>
-									<p><span class="product-title">اللون: </span> أبيض</p>
-									<p><span class="product-title">المساحة: </span> 128 جيجا</p>
-									<h4 class="product-price">280 دينار</h4>
-									<a href="product.html">
-										<button class="add-to-cart-btn">تفاصيل</button>
-									</a>
+								<h3 class="product-name-l"><a href="#">آيفون 11 أبيض مساحة 280 جيجا</a></h3>
+								<div class="product-box">
+									<div class="product-img">
+										<img src="./img/product01.png" alt="">
+									</div>
+									<div class="product-body">
+										<h3 class="product-name"><a href="#">آيفون 11 أبيض مساحة 280 جيجا</a></h3>
+										<h4 class="product-price">280 دينار</h4>
+										<p class="waranty"><i class="fa-solid fa-check"></i>كفالة 3 أشهر</p>
+										<p><span class="product-title">اللون: </span> أبيض</p>
+										<p><span class="product-title">المساحة: </span> 128 جيجا</p>
+										<a href="product.html">
+											<button class="add-to-cart-btn">تفاصيل</button>
+										</a>
+									</div>
+									<div class="product-third-col">
+										<p class="waranty"><i class="fa-solid fa-check"></i>كفالة 3 أشهر</p>
+										<a href="product.html">
+											<button class="add-to-cart-btn">تفاصيل</button>
+										</a>
+									</div>
 								</div>
 							</div>
 							<!-- /product widget -->
-
+							<hr />
 							<!-- product widget -->
 							<div class="product-widget">
-								<div class="product-img">
-									<img src="./img/product03.png" alt="">
+								<h3 class="product-name-l"><a href="#">آيفون 11 أبيض مساحة 280 جيجا</a></h3>
+								<div class="product-box">
+									<div class="product-img">
+										<img src="./img/product02.png" alt="">
+									</div>
+									<div class="product-body">
+										<h3 class="product-name"><a href="#">آيفون 11 أبيض مساحة 280 جيجا</a></h3>
+										<h4 class="product-price">280 دينار</h4>
+										<p class="waranty"><i class="fa-solid fa-check"></i>كفالة 3 أشهر</p>
+										<p><span class="product-title">اللون: </span> أبيض</p>
+										<p><span class="product-title">المساحة: </span> 128 جيجا</p>
+										<a href="product.html">
+											<button class="add-to-cart-btn">تفاصيل</button>
+										</a>
+									</div>
+									<div class="product-third-col">
+										<p class="waranty"><i class="fa-solid fa-check"></i>كفالة 3 أشهر</p>
+										<a href="product.html">
+											<button class="add-to-cart-btn">تفاصيل</button>
+										</a>
+									</div>
 								</div>
-								<div class="product-body">
-									<h3 class="product-name"><a href="#">آيفون 11</a></h3>
-									<p><span class="product-title">اللون: </span> أبيض</p>
-									<p><span class="product-title">المساحة: </span> 128 جيجا</p>
-									<h4 class="product-price">280 دينار</h4>
-									<a href="product.html">
-										<button class="add-to-cart-btn">تفاصيل</button>
-									</a>
+							</div>
+							<!-- /product widget -->
+							<hr />
+							<!-- product widget -->
+							<div class="product-widget">
+								<h3 class="product-name-l"><a href="#">آيفون 11 أبيض مساحة 280 جيجا</a></h3>
+								<div class="product-box">
+									<div class="product-img">
+										<img src="./img/product03.png" alt="">
+									</div>
+									<div class="product-body">
+										<h3 class="product-name"><a href="#">آيفون 11 أبيض مساحة 280 جيجا</a></h3>
+										<h4 class="product-price">280 دينار</h4>
+										<p class="waranty"><i class="fa-solid fa-check"></i>كفالة 3 أشهر</p>
+										<p><span class="product-title">اللون: </span> أبيض</p>
+										<p><span class="product-title">المساحة: </span> 128 جيجا</p>
+										<a href="product.html">
+											<button class="add-to-cart-btn">تفاصيل</button>
+										</a>
+									</div>
+									<div class="product-third-col">
+										<p class="waranty"><i class="fa-solid fa-check"></i>كفالة 3 أشهر</p>
+										<a href="product.html">
+											<button class="add-to-cart-btn">تفاصيل</button>
+										</a>
+									</div>
 								</div>
 							</div>
 							<!-- product widget -->
@@ -430,7 +307,7 @@
 	<!-- /SECTION -->
 
 	<!-- SECTION -->
-	<div class="section">
+	<div class="section" id="faq">
 		<div class="section-title text-center">
 			<h3 class="title">الأسئلة الأكثر شيوعاً</h3>
 		</div>
@@ -536,7 +413,7 @@
 
 	<!--Whatsapp Icon-->
 	<div id="Whatsapp">
-		<a href="" target="_blank" id="toggle1" class="Wtsapp">
+		<a href="https://wa.me/PHONE_NUMBER" target="_blank" id="toggle1" class="Wtsapp">
 			<i class="fa fa-whatsapp"></i>
 		</a>
 	</div>
@@ -628,6 +505,7 @@
 	<!-- jQuery Plugins -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/ccfa87eec6.js" crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
 	<script src="js/slider.js"></script>
 

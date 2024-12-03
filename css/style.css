@@ -59,6 +59,10 @@ Table OF Contents
   src: url(../fonts/Cairo-Regular.ttf) format('truetype');
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Cairo-Regular';
   font-weight: 400;
@@ -369,10 +373,9 @@ textarea.input {
 /*----------------------------*\
 	Top header
 \*----------------------------*/
-
 #top-header {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: #D10024;
 }
 
@@ -413,6 +416,104 @@ textarea.input {
 .header-logo .logo img {
   display: block;
   width: 100%;
+}
+
+/*=========================================================
+	03 -> Navigation
+===========================================================*/
+/*----------------------------*\
+	Main nav
+\*----------------------------*/
+
+.main-nav>li {
+  margin-left: 30px
+}
+
+.main-nav>li>a {
+  padding: 20px 0px;
+}
+
+.main-nav>li>a:hover, .main-nav>li>a:focus, .main-nav>li.active>a {
+  color: #D10024;
+  background-color: transparent;
+}
+
+.main-nav>li>a:after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #D10024;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.main-nav>li>a:hover:after, .main-nav>li>a:focus:after, .main-nav>li.active>a:after {
+  width: 100%;
+}
+
+li.nav-toggle {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+  position: relative;
+  text-align: center;
+  top: 15px;
+}
+
+.menu-toggle a {
+  font-size: 24px;
+  color: #D10024;
+}
+
+/*----------------------------*\
+	responsive nav
+\*----------------------------*/
+
+@media only screen and (max-width: 991px) {
+  .menu-toggle {
+    display: inline-block;
+  }
+  #responsive-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #fff;
+    height: 100vh;
+    max-width: 250px;
+    width: 0%;
+    overflow: hidden;
+    z-index: 22;
+    padding-top: 60px;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+  }
+  #responsive-nav.active {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+    width: 100%;
+  }
+  .main-nav {
+    margin: 0px;
+    float: none;
+  }
+  .main-nav>li {
+    display: block;
+    float: none;
+  }
+  .main-nav>li+li {
+    margin-left: 0px;
+  }
+  .main-nav>li>a {
+    padding: 15px;
+    color: #333;
+  }
 }
 
 /*=========================================================
@@ -619,6 +720,9 @@ animation-duration: 3s;
 
 .product-widget {
   position: relative;
+}
+
+.product-box {
   display: flex;
   flex-direction: row;
 }
@@ -652,20 +756,34 @@ animation-duration: 3s;
   color: #8D99AE;
 }
 
-.product-widget .product-body .product-name {
+.product-widget .product-name-l a {
+  padding: 0 35px;
   font-size: 14px;
+  font-weight: 700;
 }
 
-.product-widget .product-body .product-name>a {
-  font-weight: 500;
+.product-widget .product-body .product-name a {
+  font-size: 14px;
+  font-weight: 700;
 }
 
-.product-widget .product-body .product-name>a:hover, .product-widget .product-body .product-name>a:focus {
+.product-widget .product-name>a:hover, .product-widget .product-body .product-name>a:focus {
   color: #D10024;
+}
+
+.waranty {
+  color: #0457c8;
+  margin: 10px 0;
+}
+
+.waranty i {
+  color: #0457c8;
+  margin: 0 2px;
 }
 
 .product-widget .product-body .product-price {
   font-size: 18px;
+  /*margin-bottom: 20px;*/
   color: #D10024;
 }
 
@@ -682,6 +800,17 @@ animation-duration: 3s;
 
 .product-widget .product-body .product-title {
   font-weight: 600;
+}
+
+.product-widget .product-third-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 35px;
+}
+.product-widget .product-third-col button {
+  width: 200px;
 }
 
 /*=========================================================
@@ -1071,6 +1200,36 @@ animation-duration: 3s;
   .product-widget .product-img {
     width: 30%;
   }
+  .product-widget .product-name-l {
+    display: none;
+  }
+  .product-body .waranty {
+    display: none;
+  }
+  .product-body button {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .product-widget .product-body .product-name {
+    display:none;
+  }
+  .product-widget .product-third-col {
+    display:none;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 480px) {
+  .logo-con {
+    width: 33.33333333%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar-nav>li {
+    float: right;
+  }
 }
 
 /*=========================================================
@@ -1175,9 +1334,9 @@ FAQ SECTION
 }
 
 .dots .dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
   background-color: #FBFBFC;
   border: 1px solid #E4E7ED;
   cursor: pointer;
