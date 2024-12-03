@@ -1335,6 +1335,7 @@ FAQ SECTION
 
 .dots .dot {
   aspect-ratio: 1 / 1;
+  width: 5px;
   border-radius: 100%;
   background-color: #FBFBFC;
   /*border: 1px solid #E4E7ED;*/
