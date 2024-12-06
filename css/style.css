@@ -6,7 +6,7 @@ Colors:
 	Body 		: #333
 	Headers 	: #2B2D42
 	Primary 	: #D10024
-	Grey 		: #E4E7ED #FBFBFC #8D99AE #B9BABC / #E4E7ED #FBFBFC
+	Grey 		: #E4E7ED #FBFBFC / #8D99AE
 
 Fonts: Cairo-Regular
 
@@ -720,9 +720,6 @@ animation-duration: 3s;
 
 .product-widget {
   position: relative;
-}
-
-.product-box {
   display: flex;
   flex-direction: row;
 }
@@ -735,7 +732,8 @@ animation-duration: 3s;
   /*position: absolute;
   left: 0px;
   top: 0px;*/
-  width: 55%;
+  width: 50%;
+  margin: 0 20px;
 }
 
 .product-widget .product-img>img {
@@ -790,17 +788,6 @@ animation-duration: 3s;
 
 .product-widget .product-body .product-title {
   font-weight: 600;
-}
-
-.product-widget .product-third-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 35px;
-}
-.product-widget .product-third-col button {
-  width: 200px;
 }
 
 /*=========================================================
@@ -969,7 +956,7 @@ animation-duration: 3s;
 
 .order-details {
   position: relative;
-  padding: 0px 30px 30px;
+  padding: 0px 20px 20px;
   border-right: 1px solid #E4E7ED;
   border-left: 1px solid #E4E7ED;
   border-bottom: 1px solid #E4E7ED;
@@ -1189,15 +1176,6 @@ animation-duration: 3s;
   }
   .product-widget .product-img {
     width: 30%;
-  }
-  .product-body button {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .product-widget .product-third-col {
-    display:none;
   }
 }
 
